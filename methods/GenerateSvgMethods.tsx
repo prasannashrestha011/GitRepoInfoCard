@@ -28,7 +28,7 @@ const GenerateLastCommitPushed=(pushed_at:string)=>{
 const GenerateAuthor=(author:string)=>{
     return(
         `
-         <text x="560" y="30" fill="#786F6F" font-size="18">${escapeSvg(author)}</text>
+         <text x="560" y="30" fill="#786F6F" font-size="20" >${escapeSvg(author)}</text>
         `
     )
 }
@@ -43,7 +43,7 @@ const GenerateTitle=(title:string):string=>{
 const GenerateTotalCommitNumber=(commitLength:number):string=>{
     return(
         `
-        <text x="527" y="330" fill="#FFDDDD" font-size="20" font-family="Arial" font-weight="700"> Total Commits-</text>
+        <text x="524" y="330" fill="#FFDDDD" font-size="20" font-family="Arial" font-weight="700"> Total Commits-</text>
         <text x="660" y="330"  font-size="20" fill="#FFDDDD" font-family="Arial">${escapeSvg(commitLength.toString())}</text>
         `
     )
