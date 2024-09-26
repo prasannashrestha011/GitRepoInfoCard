@@ -1,8 +1,23 @@
+import escapeSvg from "@/app/utils/escape"
 import RelativeTimeFormatter from "@/app/utils/relativeTimeFormatter"
 import TruncateString from "@/app/utils/TruncateString"
 import { RepoCommitStruct } from "@/components/struct/RepoStruct"
 
-
+const GenerateTitle=(title:string):string=>{
+    const titleFontSize=(title.length>=20?28:40)
+    return(
+        `
+            <text x="373" y="55" fill="#FFDDDD" text-anchor="middle" font-size="${titleFontSize}" font-weight="700" font-family="Trebuchet MS" >${title}</text>
+        `
+    )
+}
+const GenerateAuthor=(author:string)=>{
+    return(
+        `
+         <text x="40" y="160" fill="#786F6F" font-size="24" font-family="Arial" >${escapeSvg(author)}</text>
+        `
+    )
+}
 const GenerateCommitList=(commitList:RepoCommitStruct[]):string=>{
     let count=0
     let commitText=""
@@ -25,21 +40,8 @@ const GenerateLastCommitPushed=(pushed_at:string)=>{
         )
         
 }
-const GenerateAuthor=(author:string)=>{
-    return(
-        `
-         <text x="40" y="160" fill="#786F6F" font-size="24" font-family="Arial" >${escapeSvg(author)}</text>
-        `
-    )
-}
-const GenerateTitle=(title:string):string=>{
-    const titleFontSize=(title.length>=20?28:40)
-    return(
-        `
-            <text x="373" y="55" fill="#FFDDDD" text-anchor="middle" font-size="${titleFontSize}" font-weight="700" font-family="Trebuchet MS" >${title}</text>
-        `
-    )
-}
+
+
 const GenerateTotalCommitNumber=(commitLength:number):string=>{
     return(
         `
@@ -48,12 +50,5 @@ const GenerateTotalCommitNumber=(commitLength:number):string=>{
         `
     )
 }
-const escapeSvg = (text: string): string => {
-    return text
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&apos;");
-}
+
 export{GenerateTitle,GenerateCommitList,GenerateTotalCommitNumber,GenerateLastCommitPushed,GenerateAuthor}
