@@ -19,8 +19,8 @@ const GenerateCommitList=(commitList:RepoCommitStruct[]):string=>{
 const GenerateLastCommitPushed=(pushed_at:string)=>{
         return(
             `
-              <text x="507" y="300" fill="#786F6F" font-family="Arial" font-size=19>Last pushed-</text>
-            <text x="610" y="300" fill="#786F6F" font-family="Arial" font-size=19>${escapeSvg(RelativeTimeFormatter(pushed_at))}</text>
+              <text x="507" y="300" fill="#786F6F" font-family="Arial" font-size="19">Last pushed-</text>
+            <text x="610" y="300" fill="#786F6F" font-family="Arial" font-size="19">${escapeSvg(RelativeTimeFormatter(pushed_at))}</text>
         `
         )
         
