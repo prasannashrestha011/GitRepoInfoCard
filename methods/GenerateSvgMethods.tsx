@@ -43,7 +43,7 @@ const GenerateTitle=(title:string):string=>{
 const GenerateTotalCommitNumber=(commitLength:number):string=>{
     return(
         `
-        <text x="524" y="330" fill="#FFDDDD" font-size="20" font-family="Arial" font-weight="700"> Total Commits-</text>
+        <text x="510" y="330" fill="#FFDDDD" font-size="20" font-family="Arial" font-weight="700"> Total Commits-</text>
         <text x="660" y="330"  font-size="20" fill="#FFDDDD" font-family="Arial">${escapeSvg(commitLength.toString())}</text>
         `
     )
