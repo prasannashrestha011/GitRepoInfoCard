@@ -33,7 +33,7 @@ ${GitHubLogoSvg()}
 <rect width="77" height="77" fill="url(#pattern0_14_11)" x="40" y="40"/>
     ${author}
     ${titleCard}
-    <text x="40" y="220" fill="#FFDDDD" font-size="23.5" class="inter-text" font-family="Trebuchet MS">Recent Commits</text>
+    <text x="40" y="220" fill="#FFDDDD" font-size="25" class="inter-text" font-family="Trebuchet MS">Recent Commits</text>
     ${commitList}
       ${totalCommits}
       ${pushed_at}

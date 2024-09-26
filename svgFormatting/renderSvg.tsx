@@ -40,7 +40,7 @@ const  BackgroundGrid=()=>{
 //header// 
 <text x="373" y="40" fill="#FFDDDD" text-anchor="middle" font-size="40" font-weight="700" class="inter-text" >Repo title</text>
 //main//
-<text x="60" y="180" fill="#FFDDDD" font-size="19.5" class="inter-text">Recent Commits</text>
+<text x="60" y="180" fill="#FFDDDD" font-size="25" class="inter-text">Recent Commits</text>
  <text  x="60" y="210" fill="#FFDDDD" font-size="18" font-weight="50" class="monospace-text">
        new feature added and begins usign for changed asdfasdfasdfasdfasdfasdfasdfasdfasdfasdfasfsadf
     </text>
