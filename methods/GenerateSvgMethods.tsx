@@ -7,7 +7,7 @@ const GenerateCommitList=(commitList:RepoCommitStruct[]):string=>{
     let count=0
     let commitText=""
     const svgCommitList=commitList.slice(0,3).map((commit)=>{
-        commitText+= `<text x="40" y="${250+5*count}" font-size="18" fill="#FFDDDD" font-family="Arial">
+        commitText+= `<text x="40" y="${250+5*count}" font-size="19.8" fill="#FFDDDD" font-family="Arial">
              - ${TruncateString(escapeSvg(commit.commit.message),40)}
         </text>
        `
@@ -28,7 +28,7 @@ const GenerateLastCommitPushed=(pushed_at:string)=>{
 const GenerateAuthor=(author:string)=>{
     return(
         `
-         <text x="560" y="30" fill="#786F6F">${escapeSvg(author)}</text>
+         <text x="560" y="30" fill="#786F6F" font-size="18">${escapeSvg(author)}</text>
         `
     )
 }
