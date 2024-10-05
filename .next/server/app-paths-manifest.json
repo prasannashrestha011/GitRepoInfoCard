@@ -1,5 +1,9 @@
 {
-  "/home/page": "app/home/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/api/latestRepo/route": "app/api/latestRepo/route.js",
-  "/favicon.ico/route": "app/favicon.ico/route.js"
+  "/api/repodata/route": "app/api/repodata/route.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/home/page": "app/home/page.js",
+  "/page": "app/page.js"
 }

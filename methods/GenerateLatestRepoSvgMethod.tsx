@@ -31,7 +31,7 @@ const fontAttributes=()=>{
 const GenerateLatestRepoTitle=(title:string):string=>{
     const calTitlefontSize=title.length>30?"23":"32"
     return(
-       ` <text font-size="${calTitlefontSize}" fill="white"      font-family="Segoe UI" font-weight="500" x="300" y="40">${title}</text>`
+       ` <text font-size="${calTitlefontSize}" fill="white"      font-family="Segoe UI" font-weight="500" x="250" y="40">${title}</text>`
     )
 }
 const GenerateLatestRepoAuthor=(author:string)=>{
@@ -64,7 +64,7 @@ const GenerateLatestRepoCommitList=(commits:RepoCommitStruct[])=>{
              fill="#DFDADA"  
              font-size="20" 
 
-             fill-opacity="0.5"  
+             fill-opacity="0.8"  
              letter-spacing="1"
               font-weight="300" 
              font-family="Segoe UI,Verdana,Arial">- ${TruncateString(escapeSvg(commit.commit.message),48)}</text>
@@ -76,7 +76,7 @@ const GenerateLatestRepoCommitList=(commits:RepoCommitStruct[])=>{
 const GenerateLatestRepoTotalCommits=(commit_length:number)=>{
     return(
         `
-        <text x="539" y="318" fill="#DFDADA"  font-size="24" fill-opacity="0.7"   font-family="Segoe UI">TotalCommits- ${commit_length}</text>
+        <text x="539" y="318" fill="#DFDADA"  font-size="24" fill-opacity="0.9"   font-family="Segoe UI">TotalCommits- ${commit_length}</text>
         `
     )
 }

@@ -1,6 +1,6 @@
 
 import { SvgData } from '../svgDataFormat/svgDataClass'
-import GenerateBackgroundGrid from '@/app/utils/backgroundGrid'
+import {GenerateBackgroundGrid} from '@/app/utils/backgroundGrid'
 import { GenerateLatestRepoAuthor, GenerateLatestRepoCommitList, GenerateLatestRepoRecentCommitPushedTime, GenerateLatestRepoTitle, GenerateLatestRepoTotalCommits } from '@/methods/GenerateLatestRepoSvgMethod'
 
 const GenerateLatestRepoSvgCard = (svgData:SvgData) => {
