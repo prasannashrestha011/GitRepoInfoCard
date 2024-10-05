@@ -13,7 +13,7 @@ const GenerateLatestRepoSvgCard = (svgData:SvgData) => {
   const totalCommits=GenerateLatestRepoTotalCommits(svgData.total_commits)
   return(
     `
-        <svg width="723" height="383" viewBox="0 0 723 383" fill="none" xmlns="http://www.w3.org/2000/svg" >
+        <svg width="780" height="383" viewBox="0 0 723 383" fill="none" xmlns="http://www.w3.org/2000/svg" >
         
         ${GenerateBackgroundGrid()}
         ${repoTitle}
